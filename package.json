@@ -1,0 +1,27 @@
+{
+  "name": "@moyabe/cli",
+  "version": "1.0.0",
+  "description": "A set of Linux command line development tools built by MoYaBe.",
+  "main": "index.js",
+  "scripts": {
+    "test": "node dist/index.js test --hey=ho",
+    "build": "rm -rf ./dist && tsc && cd src && copyfiles -F **/*.txt **/*.template.html **/*.template.ts ../dist && npm r @moyabe/cli -g && npm link"
+  },
+  "bin": {
+    "moyabe": "dist/index.js"
+  },
+  "author": "MoYaBe",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/minimist": "^1.2.5",
+    "@types/node": "^22.10.5",
+    "@types/prompt-sync": "^4.2.3",
+    "copyfiles": "^2.4.1",
+    "typescript": "^5.7.2"
+  },
+  "dependencies": {
+    "@angular/cli": "^19.0.7",
+    "minimist": "^1.2.8",
+    "prompt-sync": "^4.2.0"
+  }
+}

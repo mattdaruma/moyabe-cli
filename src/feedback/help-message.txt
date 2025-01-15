@@ -1,0 +1,14 @@
+When running the MoYaBe CLI, there are three parts to the command: 
+  1. The system command, 'moyabe' by default.  The command registered with your OS to trigger this CLI.
+  2. The MoYaBe command.  The first word after the system command that isn't preceded by two --dashes.
+    2a. Example: help
+  3. MoYaBe parameters.  These are preceded by two dashes and have a value following an equal sign.
+    3a. Example: --example=value
+    3b. There are no spaces between key and value in parameters.
+    3c. If you need spaces in the value, wrap it in quotes, like --example="value value"
+  * System command, MoYaBe command, and parameters must all be separated by spaces.
+
+
+Valid commands are:
+  help - Bring up this menu.
+  generate - I don't know I'm still making it up probably make an app or something.
