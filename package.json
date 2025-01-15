@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "node dist/index.js test --hey=ho",
-    "build": "rm -rf ./dist && tsc && cd src && copyfiles -F **/*.txt **/*.template.html **/*.template.ts ../dist && npm r @moyabe/cli -g && npm link"
+    "build": "npm r @moyabe/cli -g && rm -rf ./dist && tsc && cd src && copyfiles -F **/*.txt **/*.template.html **/*.template.ts ../dist && npm link"
   },
   "bin": {
     "moyabe": "dist/index.js"
