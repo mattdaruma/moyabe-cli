@@ -65,8 +65,8 @@ The strategy here is to just build what I'm actually going to use to get to the 
     - displays user info on the demo in the header dropdown and adds a logged in badge to the dropdown icon
 - final short term goal: develop gemini app from base demo
     - api key input in header passed into HttpInterceptor
-    - each of the direct app children can simple calls to core functions
+    - each of the direct app children can be simple forms that call core functions
     - the parents can be more advanced concepts that involve generating data relationships
         - the parent can hold the relationships between child data and make complex prompts together
     - make new commands for whatever additions are made throughout the process for reusability
-- may develop a prmopt api for the CLI
+- may develop a prompt api for the CLI
